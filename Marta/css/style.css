@@ -15,7 +15,7 @@ a {
 
 .header {
     background-image: url(../images/Header.jpg);
-    height: 100vh;
+    min-height: 793px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;

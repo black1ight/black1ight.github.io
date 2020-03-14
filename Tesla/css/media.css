@@ -171,6 +171,46 @@
     }
 }
 
+@media (max-height: 375px) {
+    .header__logo {
+        margin-top: 10px;
+    }
+    .header-btn {
+        margin-top: 15px;
+    }
+    .header-top {
+        margin-bottom: 0px;
+    }
+    .header-content__title {
+        font-size: 70px;
+        line-height: 90px;
+    }
+    .header-content__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .header-content__btn a {
+        padding: 20px 40px;
+    }
+    .menu-list a {
+        border-bottom: 2px solid #B70021;
+        font-size: 24px;
+        line-height: 24px;
+        padding: 20px 25px 5px 0;
+    }
+    .close-btn {
+        width: 30px;
+        height: 30px;
+        right: 30px;
+        top: 35px;
+    }
+    .close-btn::before,
+    .close-btn::after {
+        width: 40px;
+        top: 13px;
+    }
+}
+
 @media (max-width: 320px) {
     .header-btn {
         margin-top: 15px;

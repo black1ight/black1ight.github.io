@@ -153,6 +153,24 @@
     }
 }
 
+@media (max-height: 375px) {
+    .header-content__title {
+        font-size: 80px;
+        line-height: 100px;
+        margin-bottom: 0px;
+    }
+    .header-content__text {
+        max-width: 100%;
+        margin-bottom: 33px;
+    }
+    .header-content__btn {
+        text-align: right;
+    }
+    .header-top {
+        margin-bottom: 12px;
+    }
+}
+
 @media (max-width: 320px) {
     .header-btn {
         margin-top: 15px;

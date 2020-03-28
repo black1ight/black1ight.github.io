@@ -35,34 +35,55 @@ $(function(){
         $('.nav__link').removeClass('active');
     });
 
-    $('#about').click(function(){
-        $('.nav__link#about').addClass('active');
+    $('#about-link').click(function(){
+        $('.nav__link#about-link').addClass('active');
         var href = $(this).attr('href');
-        setTimeout(function() {window.location = href}, 1000);
+        setTimeout(function() {
+            window.location = href,
+            $('.nav').css("display", "none");
+            $('.burger-btn').removeClass('active');
+        }, 1000);
+        return false;
+        $("body,html").animate({scrollTop: destination }, 800);
+    });
+    $('#service-link').click(function(){
+        $('.nav__link#service-link').addClass('active');
+        var href = $(this).attr('href');
+        setTimeout(function() {
+            window.location = href,
+            $('.nav').css("display", "none");
+            $('.burger-btn').removeClass('active');
+        }, 1000);
         return false;
     });
-    $('#service').click(function(){
-        $('.nav__link#service').addClass('active');
+    $('#work-link').click(function(){
+        $('.nav__link#work-link').addClass('active');
         var href = $(this).attr('href');
-        setTimeout(function() {window.location = href}, 1000);
+        setTimeout(function() {
+            window.location = href,
+            $('.nav').css("display", "none");
+            $('.burger-btn').removeClass('active');
+        }, 1000);
         return false;
     });
-    $('#work').click(function(){
-        $('.nav__link#work').addClass('active');
+    $('#blog-link').click(function(){
+        $('.nav__link#blog-link').addClass('active');
         var href = $(this).attr('href');
-        setTimeout(function() {window.location = href}, 1000);
+        setTimeout(function() {
+            window.location = href,
+            $('.nav').css("display", "none");
+            $('.burger-btn').removeClass('active');
+        }, 1000);
         return false;
     });
-    $('#blog').click(function(){
-        $('.nav__link#blog').addClass('active');
+    $('#contact-link').click(function(){
+        $('.nav__link#contact-link').addClass('active');
         var href = $(this).attr('href');
-        setTimeout(function() {window.location = href}, 1000);
-        return false;
-    });
-    $('#contact').click(function(){
-        $('.nav__link#contact').addClass('active');
-        var href = $(this).attr('href');
-        setTimeout(function() {window.location = href}, 1000);
+        setTimeout(function() {
+            window.location = href,
+            $('.nav').css("display", "none");
+            $('.burger-btn').removeClass('active');
+        }, 1000);
         return false;
     });
 

@@ -32,5 +32,43 @@ $(function(){
     $('.burger-btn').click(function(){
         $('.burger-btn').toggleClass('active');
         $('.nav').slideToggle();
+        $('.nav__link').removeClass('active');
     });
+
+    $('#about').click(function(){
+        $('.nav__link#about').addClass('active');
+        var href = $(this).attr('href');
+        setTimeout(function() {window.location = href}, 1000);
+        return false;
+    });
+    $('#service').click(function(){
+        $('.nav__link#service').addClass('active');
+        var href = $(this).attr('href');
+        setTimeout(function() {window.location = href}, 1000);
+        return false;
+    });
+    $('#work').click(function(){
+        $('.nav__link#work').addClass('active');
+        var href = $(this).attr('href');
+        setTimeout(function() {window.location = href}, 1000);
+        return false;
+    });
+    $('#blog').click(function(){
+        $('.nav__link#blog').addClass('active');
+        var href = $(this).attr('href');
+        setTimeout(function() {window.location = href}, 1000);
+        return false;
+    });
+    $('#contact').click(function(){
+        $('.nav__link#contact').addClass('active');
+        var href = $(this).attr('href');
+        setTimeout(function() {window.location = href}, 1000);
+        return false;
+    });
+
 });
+
+setTimeout(function () {
+    // Ваш скрипт
+    }, 1000); // время в мс
+    

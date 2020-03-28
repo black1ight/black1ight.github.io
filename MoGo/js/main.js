@@ -98,20 +98,22 @@ $(function () {
         return false;
     });
 
-
-    var element = $('.about__item--2');
-    $counter = 0;
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop() + $(window).height();
-        var offset = element.offset().top;
-
-        if (scroll > offset && $counter == 0) {
-            $('.burger-btn').addClass('black');
-            $counter = 1;
+    let burger = $(".burger-btn");
+    let intro = $(".intro");
+    let introH = intro.innerHeight();
+    let scrollPos = $(window).scrollTop();
+    
+    $(window).on("scroll", function() {
+        introH = intro.innerHeight();
+        scrollPos = $(this).scrollTop();
+        
+        if( scrollPos > introH ) {
+            burger.addClass("black");
+        } else {
+            burger.removeClass("black");
         }
     });
-
-
+    
 });
 
 

@@ -137,7 +137,9 @@ xr {
 
 /* active */
 
-
+.burger-btn.black.active {
+    opacity: 1;
+}
 
 .burger-btn.active::before {
     transform: rotate(45deg);
@@ -164,6 +166,7 @@ xr {
 .burger-btn.black {
     position: fixed;
     right: 15px;
+    opacity: .5;
 }
 
 .burger-btn.black span {

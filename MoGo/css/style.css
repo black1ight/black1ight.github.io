@@ -160,6 +160,24 @@ xr {
     animation-delay: 0.5s;
 }
 
+
+.burger-btn.black {
+    position: fixed;
+    right: 15px;
+}
+
+.burger-btn.black span {
+    background-color: #333;
+}
+
+.burger-btn.black::after {
+    background-color: #333;
+}
+
+.burger-btn.black::before {
+    background-color: #333;
+}
+
 @keyframes move {
     from {
         margin-left: 0%;

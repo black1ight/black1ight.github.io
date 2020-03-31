@@ -72,7 +72,7 @@
         flex-wrap: wrap;
     }
     .about__item {
-        margin: 20px;
+        margin: 20px 0;
     }
 
     .stat__count {
@@ -100,8 +100,11 @@
     .wedo__item {
         margin: 20px;
         width: 100%;
-        max-width: 570px;
         text-align: center;
+    }
+
+    .wedo__item-img {
+        width: 100%;
     }
 
     .accordion__content-text {
@@ -163,11 +166,11 @@
         display: block;
     }
     .about__img img {
-        width: 380px;
+        width: 100%;
     }
 
     .about__item {
-        width: 380px;
+        width: 100%;
         margin: 40px auto;
     }
 
